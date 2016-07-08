@@ -2,10 +2,15 @@
 #include<stdio.h>
 void main()
 {
-char a[10];
-int b;
+char a[100];
+int b,c=0;
 printf("enter the string");
 scanf("%s",a);
+for(i=0;;i++)
+{
+  if(a[i]==' ')
+  c++;
+}
 b=strlen(a);
-printf("the length of string is %d:",b);
+printf("the length %d",c);
 }
